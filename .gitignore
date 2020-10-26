@@ -1,0 +1,8 @@
+BlazorFeatures/BlazorFeatures/obj/
+BlazorFeatures/BlazorFeatures/wwwroot/
+BlazorFeatures/.vs/BlazorFeatures/v16/.suo
+BlazorFeatures/.vs/BlazorFeatures/DesignTimeBuild/.dtbcache.v2
+BlazorFeatures/BlazorFeatures.sln
+BlazorFeatures/BlazorFeatures/appsettings.Development.json
+BlazorFeatures/BlazorFeatures/Properties/launchSettings.json
+BlazorFeatures/BlazorFeatures/BlazorFeatures.csproj
