@@ -6,3 +6,5 @@ BlazorFeatures/BlazorFeatures.sln
 BlazorFeatures/BlazorFeatures/appsettings.Development.json
 BlazorFeatures/BlazorFeatures/Properties/launchSettings.json
 BlazorFeatures/BlazorFeatures/BlazorFeatures.csproj
+BlazorFeatures/BlazorFeatures/bin/Debug/netcoreapp3.1/appsettings.Development.json
+BlazorFeatures/BlazorFeatures/bin/
