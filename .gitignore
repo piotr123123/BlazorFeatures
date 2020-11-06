@@ -9,3 +9,4 @@ BlazorFeatures/BlazorFeatures/BlazorFeatures.csproj
 BlazorFeatures/BlazorFeatures/bin/Debug/netcoreapp3.1/appsettings.Development.json
 BlazorFeatures/BlazorFeatures/bin/
 BlazorFeatures/Models/obj/
+BlazorFeatures/Models/Models.csproj
