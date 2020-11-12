@@ -10,3 +10,6 @@ BlazorFeatures/BlazorFeatures/bin/Debug/netcoreapp3.1/appsettings.Development.js
 BlazorFeatures/BlazorFeatures/bin/
 BlazorFeatures/Models/obj/
 BlazorFeatures/Models/Models.csproj
+BlazorFeatures/EmployeeManagementApi/bin/
+BlazorFeatures/EmployeeManagementApi/obj/Debug/
+BlazorFeatures/EmployeeManagementApi/obj/
