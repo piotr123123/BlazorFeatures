@@ -14,3 +14,11 @@ BlazorFeatures/EmployeeManagementApi/bin/
 BlazorFeatures/EmployeeManagementApi/obj/Debug/
 BlazorFeatures/EmployeeManagementApi/obj/
 BlazorFeatures/Models/bin/
+BlazorFeatures/EmployeeManagementApi/Migrations/AppDbContextModelSnapshot.cs
+BlazorFeatures/EmployeeManagementApi/Properties/launchSettings.json
+BlazorFeatures/.vs/BlazorFeatures/config/applicationhost.config
+BlazorFeatures/EmployeeManagementApi/Migrations/20201122185044_base.cs
+BlazorFeatures/EmployeeManagementApi/Migrations/20201122185044_base.Designer.cs
+BlazorFeatures/EmployeeManagementApi/appsettings.Development.json
+BlazorFeatures/EmployeeManagementApi/EmployeeManagementApi.csproj
+BlazorFeatures/EmployeeManagementApi/Program.cs
