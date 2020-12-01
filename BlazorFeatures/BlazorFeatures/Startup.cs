@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorFeatures.Data;
+using System.Net.Http;
+using BlazorFeatures.Services;
 
 namespace BlazorFeatures
 {
@@ -29,6 +31,13 @@ namespace BlazorFeatures
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<HttpClient>();
+            services.AddScoped<IGoldPrice, GoldPriceService>();
+            services.AddHttpClient<IGoldPrice, GoldPriceService>(client =>
+            {
+                client.BaseAddress = new Uri("http://api.nbp.pl/");
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
