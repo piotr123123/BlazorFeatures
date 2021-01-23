@@ -4,18 +4,18 @@ using System.Text;
 
 namespace Models
 {
-    public class GoldPrice
+    public class GoldPriceDTO
     {
         public DateTime data { get; set; }
         public double cena { get; set; }
 
-        public GoldPrice(DateTime dateTime, double cena)
+        public GoldPriceDTO(DateTime dateTime, double cena)
         {
             this.data = dateTime;
             this.cena = cena;
         }
 
-        public GoldPrice()
+        public GoldPriceDTO()
         { 
         
         }
