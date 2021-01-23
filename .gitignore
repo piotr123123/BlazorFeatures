@@ -22,3 +22,4 @@ BlazorFeatures/EmployeeManagementApi/Migrations/20201122185044_base.Designer.cs
 BlazorFeatures/EmployeeManagementApi/appsettings.Development.json
 BlazorFeatures/EmployeeManagementApi/EmployeeManagementApi.csproj
 BlazorFeatures/EmployeeManagementApi/Program.cs
+BlazorFeatures/.vs/
