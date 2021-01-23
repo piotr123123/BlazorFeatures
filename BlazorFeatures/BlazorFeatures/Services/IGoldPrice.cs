@@ -9,7 +9,7 @@ namespace BlazorFeatures.Services
 {
     public interface IGoldPrice
     {
-        Task<IEnumerable<GoldPrice>> GetGoldPrice();
-        public Tuple<HttpStatusCode, GoldPrice[]> GetGoldPrice1();
+        Task<IEnumerable<GoldPriceDTO>> GetGoldPrice();
+        public Tuple<HttpStatusCode, GoldPriceDTO[]> GetGoldPrice1();
     }
 }

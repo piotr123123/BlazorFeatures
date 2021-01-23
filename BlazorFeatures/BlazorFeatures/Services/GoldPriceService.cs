@@ -24,13 +24,13 @@ namespace BlazorFeatures.Services
         {
 
         }
-        public async Task<IEnumerable<GoldPrice>> GetGoldPrice()
+        public async Task<IEnumerable<GoldPriceDTO>> GetGoldPrice()
         {
-            return await httpClient.GetJsonAsync<GoldPrice[]>("api/cenyzlota?format=json");
+            return await httpClient.GetJsonAsync<GoldPriceDTO[]>("api/cenyzlota?format=json");
 
         }
 
-        public Tuple<HttpStatusCode, GoldPrice[]> GetGoldPrice1()
+        public Tuple<HttpStatusCode, GoldPriceDTO[]> GetGoldPrice1()
         {
             var client = new RestClient("http://api.nbp.pl/api");
 
@@ -46,9 +46,9 @@ namespace BlazorFeatures.Services
             string responseText = null;
             responseText = response.Content;
 
-            GoldPrice[] call = JsonConvert.DeserializeObject<GoldPrice[]>(responseText);
+            GoldPriceDTO[] call = JsonConvert.DeserializeObject<GoldPriceDTO[]>(responseText);
             double wynik = call[0].cena;
-            return new Tuple<HttpStatusCode, GoldPrice[]>(respstatus, call);
+            return new Tuple<HttpStatusCode, GoldPriceDTO[]>(respstatus, call);
         }
     }
 }
