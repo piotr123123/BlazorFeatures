@@ -19,18 +19,78 @@
         align-items: center;
     }
 
-@@keyframes example {
-  0%   {background-color:#E0FFFF; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:#E0FFFF; left:0px; top:0px;}
-}
+    @@keyframes example {
+        0% {
+            background-color: #E0FFFF;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: #E0FFFF;
+            left: 0px;
+            top: 0px;
+        }
+    }
 </style>
 
 <h3>Gold Price</h3>
 
 <div id="div"><p>@CenaZlota()</p></div>
+
+
+
+@if (GoldPriceColletcion == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+<div class="card_deck">
+    @foreach (var t in GoldPriceColletcion)
+    {
+        <div class="card m-3" style="min-width: 18rem; max-width:30%;">
+            <div>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Cena</th>
+                            <th scope="col">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@t.cena</td>
+                            <td>@t.data</td>
+                        </tr>
+                        <tr>
+                            <td>@if (t.cena > 215.00) ; <p>@Message</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+}
 
 
 
