@@ -33,7 +33,13 @@ namespace BlazorFeatures
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<HttpClient>();
             services.AddScoped<IGoldPrice, GoldPriceService>();
+            services.AddScoped<ICurrencyRate, CurrencyRateService>();
             services.AddHttpClient<IGoldPrice, GoldPriceService>(client =>
+            {
+                client.BaseAddress = new Uri("http://api.nbp.pl/");
+
+            });
+            services.AddHttpClient<ICurrencyRate, CurrencyRateService>(client =>
             {
                 client.BaseAddress = new Uri("http://api.nbp.pl/");
 
